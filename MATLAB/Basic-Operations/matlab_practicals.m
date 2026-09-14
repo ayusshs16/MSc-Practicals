@@ -57,3 +57,44 @@ for i = 1:n
 end
 
 y
+
+
+% Q4. GAXPY operation using a for loop
+% GAXPY: y = y + A*x
+% Given a matrix A and vectors x and y.
+
+n = 3;
+A = [1 2 3; 4 5 6; 7 8 9];
+x = [1; 2; 3];
+y = [10; 20; 30];
+
+for i = 1:n
+    c = 0;
+    for j = 1:n
+        c = c + A(i,j) * x(j);
+    end
+    y(i) = y(i) + c;
+end
+
+y
+
+
+% Q5. Generate random values for GAXPY using randi()
+% GAXPY: y = y + A*x
+
+n = 3;
+A = randi(10, n, n);
+x = randi(10, n, 1);
+y = randi(20, n, 1);
+
+for i = 1:n
+    c = 0;
+    for j = 1:n
+        c = c + A(i,j) * x(j);
+    end
+    y(i) = y(i) + c;
+end
+
+A
+x
+y
