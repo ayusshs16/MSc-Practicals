@@ -9,6 +9,9 @@ MSc-Practicals/
 │
 ├── R/
 │   ├── README.md
+│   ├── Programming/
+│   │   ├── README.md
+│   │   └── r_programming.R
 │   └── Statistics/
 │       ├── Sampling/
 │       │   └── sampling.R
@@ -28,9 +31,32 @@ MSc-Practicals/
         └── matlab_practicals.m
 ```
 
+## 🟣 R Programming Practicals
+
+The **R Programming** section is for the separate **Programming (Python and R)** subject. The programs are based on the R classroom notes and cover the core R concepts taught in class.
+
+### Topics currently covered
+
+- Variables and data types
+- Creating vectors using `c()`, `:`, and `seq()`
+- Positive, negative, logical, and named vector indexing
+- `length()`, `str()`, appending elements, and naming vector elements
+- Vector arithmetic and the recycling rule
+- `min()`, `max()`, `which.min()`, `which.max()`, `sum()`, and `prod()`
+- Modifying, truncating, and deleting vectors
+- Sorting vectors in ascending and descending order
+- Value coercion
+- Repeating and combining vectors using `rep()` and `c()`
+
+The concepts are organized into **9 practical questions** so the file is useful for lab work and practical-exam revision.
+
+[➡️ Open R Programming Practicals](R/Programming/r_programming.R)
+
+[➡️ Open R Programming README](R/Programming/README.md)
+
 ## 🧮 R Statistics Practicals
 
-The R section contains practical programs related to probability, distributions, and sampling.
+The **R Statistics** section is a separate collection of statistical and probability practicals. It is not mixed with the R Programming material.
 
 ### Topics currently covered
 
@@ -41,7 +67,7 @@ The R section contains practical programs related to probability, distributions,
 
 R programs are written primarily using the standard distribution functions such as `dbinom()`, `pbinom()`, `dpois()`, `ppois()`, `dchisq()`, `pchisq()`, `qchisq()`, and `rchisq()`.
 
-[➡️ Open R Practicals](R/README.md)
+[➡️ Open R Statistics Practicals](R/README.md)
 
 ## 🐍 Python Practicals
 
@@ -76,30 +102,35 @@ The MATLAB programs are kept close to the classroom approach, using loops to und
 This repository is maintained as a **practical study reference**. The main goals are to:
 
 1. Keep all practical codes in one place.
-2. Organize programs by language and topic.
-3. Make revision faster before practical examinations.
-4. Keep classroom examples and solutions easy to access.
-5. Track new practicals as the semester progresses.
+2. Organize programs by language and subject.
+3. Keep R Programming and R Statistics clearly separated.
+4. Make revision faster before practical examinations.
+5. Keep classroom examples and solutions easy to access.
+6. Track new practicals as the semester progresses.
 
 ## 🛠️ Tools Used
 
-- **R / RStudio** — statistical and probability practicals
-- **Python** — basic programming practicals
+- **R / RStudio** — programming and statistical practicals
+- **Python** — programming practicals
 - **MATLAB** — numerical, vector, and matrix operations
 - **GitHub** — version control and storage
 
-## 📌 Note
+## 📌 Notes
 
-Some MATLAB practical questions were reconstructed from classroom-board photographs because the original written questions were not available. The code is intended for learning and revision and may be updated as the exact practical questions become available.
+- The R Programming practicals are based on the classroom notes and R vector material provided in class.
+- The R Statistics practicals are maintained separately because they belong to the statistics-focused practical work.
+- Some MATLAB practical questions were reconstructed from classroom-board photographs because the original written questions were not available.
+- The repository is intended for learning, practice, assignment preparation, and revision and may be updated as new practical questions are taught.
 
 ## 📈 Future Additions
 
 This repository will be expanded with upcoming practicals, including additional topics in:
 
+- R Programming
 - R Statistics
 - Probability Distributions
-- Data Science
 - Python Programming
+- Data Science
 - MATLAB
 - Numerical and Matrix Computation
 - Other M.Sc. practical coursework
