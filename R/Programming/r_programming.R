@@ -163,3 +163,24 @@ tmp1 <- c(12, 23, 25)
 tmp2 <- c("aaa", "abb", "acc", "add", "aee")
 combined <- c(tmp1, tmp2)
 print(combined)
+
+# Q10. Reading an Excel file and checking missing values
+# Load the packages needed to read Excel files and work with data.
+library(dplyr)
+library(readxl)
+
+# Read the practical dataset from an Excel file.
+ppr <- read_excel("C:/Users/Ayush/Downloads/ppr.xls")
+
+# View the dataset and its column names.
+View(ppr)
+names(ppr)
+
+# Check missing values in the complete dataset.
+View(is.na(ppr))
+colSums(is.na(ppr))
+View(colSums(is.na(ppr)))
+
+# Check missing values specifically in the Candidate's Email column.
+View(is.na(ppr[["Candidate's Email"]]))
+colSums(is.na(ppr))
