@@ -2,32 +2,38 @@
 # POISSON DISTRIBUTION
 # ==========================================
 
+# Find the maximum-likelihood estimate of lambda from a sample.
+x <- c(2, 3, 4, 5, 6, 7, 8)
+n <- length(x)
+sum_x <- sum(x)
 
-# Q9. A shop receives an average of 4 customers per hour.
-#     Find the probability that exactly 6 customers arrive in one hour.
+lambda_MLE <- sum_x / n
+print(lambda_MLE)
 
-lambda <- 4
-x <- 6
+# Estimate lambda for another Poisson sample.
+x <- c(1, 0, 2, 3, 1, 2, 0, 1, 2, 3)
+n <- length(x)
+sum_x <- sum(x)
 
-p <- dpois(x, lambda)
-p
+lambda_MLE <- sum_x / n
+print(lambda_MLE)
 
+# Estimate lambda using the sample mean.
+x <- c(2, 4, 3, 5, 1, 2, 3, 4, 2, 3)
 
-# Q10. A call center receives an average of 5 calls per minute.
-#      Find the probability of receiving at most 3 calls in one minute.
+lambda <- mean(x)
+lambda
 
-lambda <- 5
-x <- 3
+# Find P(X <= 3) using the estimated lambda.
+ppois(3, lambda)
 
-p <- ppois(x, lambda)
-p
+# Method of Moments and Maximum Likelihood give the same estimate
+# for lambda in the Poisson distribution.
+x <- c(3, 4, 5, 2, 6, 4, 3, 5)
+n <- length(x)
 
+lambda_MOM <- mean(x)
+lambda_MLE <- sum(x) / n
 
-# Q11. A hospital receives an average of 3 emergency patients per hour.
-#      Find the probability of receiving more than 5 patients in one hour.
-
-lambda <- 3
-x <- 5
-
-p <- 1 - ppois(x, lambda)
-p
+lambda_MOM
+lambda_MLE
